@@ -15,8 +15,7 @@ namespace Strings
                 string auswahl;
                 Console.WriteLine("1: Zeichen ersetzen.");
                 Console.WriteLine("2: Vokale entfernen.");
-                Console.WriteLine("3: Quersumme bilden.");
-                Console.WriteLine("4: Beenden.");
+                Console.WriteLine("3: Beenden.");
 
                 Console.Write("Auswahl:");
                 auswahl = Console.ReadLine();
@@ -56,33 +55,27 @@ namespace Strings
                         zeichenkette = Console.ReadLine();
                         string zeichenketteAlt = zeichenkette;
                         string vokale = "aieouAIEOU";
-                        string ersetzt2 = "";
+                        String ersetzt2
 
                         for (int i = 0; i < vokale.Length; i++)
                         {
-                            //zeichenkette = zeichenkette.Replace(vokale[i].ToString(),"");
-                            for (int j = 0; j < zeichenkette.Length; j++)
+                            //  zeichenkette = zeichenkette.Replace(vokale[i].ToString(),"");
+                            for (int j = 0; j < zeichenkette.Length; j++) ;
                             {
-                                if (zeichenkette[j] == vokale[i])
-                                {
-                                    ersetzt2 += "";
-                                }
-                                else
-                                {
-                                    ersetzt2 += zeichenkette[i];
-                                }
-                            }
+
+                          
+                            if (zeichenkette{j} == vokale{i}) 
+                        {
+                            ersetzt2 +
                         }
+
+
+                        }
+                        
+                        
                         Console.WriteLine(zeichenketteAlt + " wird zu " + zeichenkette);
                         break;
                     case "3":
-                        Console.WriteLine("Die Quersumme einer ganzen Zahl soll berechnet werden.");
-
-
-
-
-                        break;
-                    case "4":
                         Console.WriteLine("Programm wird beendet.");
                         
                         break;
