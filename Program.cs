@@ -15,7 +15,9 @@ namespace Strings
                 string auswahl;
                 Console.WriteLine("1: Zeichen ersetzen.");
                 Console.WriteLine("2: Vokale entfernen.");
-                Console.WriteLine("3: Beenden.");
+                Console.WriteLine("3: Quersumme berechnen.");
+                Console.WriteLine("4: auf Kleinbuchstaben prüfen.");
+                Console.WriteLine("5: Beenden.");
 
                 Console.Write("Auswahl:");
                 auswahl = Console.ReadLine();
@@ -76,12 +78,27 @@ namespace Strings
                         break;
                     case "3":
                         Console.WriteLine("Die Quersumme einer ganzen Zahl soll berechnet werden.");
-
-
-
+                        Console.Write("Eine ganze Zahl eingeben:");
+                        string zahl = Console.ReadLine();
+                        int quersumme = 0;                        
+                        for (int i = 0; i < zahl.Length; i++)
+                        {
+                            quersumme += Convert.ToInt32( zahl[i].ToString() );
+                        }
+                        Console.WriteLine("Die Quersumme von " + zahl + " ist: " +quersumme);
 
                         break;
                     case "4":
+                        Console.WriteLine("Ein String wird auf Kleinbuchstaben untersucht.");
+                        Console.Write("Eine Zeichenkette eingeben:");
+                        string wort = Console.ReadLine();
+                        for (int i = 0; i < wort.Length; i++)
+                        {
+                            
+                        }
+                        
+                        break;
+                    case "5":
                         Console.WriteLine("Programm wird beendet.");
                         
                         break;
