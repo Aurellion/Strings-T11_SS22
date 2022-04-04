@@ -55,27 +55,33 @@ namespace Strings
                         zeichenkette = Console.ReadLine();
                         string zeichenketteAlt = zeichenkette;
                         string vokale = "aieouAIEOU";
-                        String ersetzt2
+                        string ersetzt2 = "";
 
                         for (int i = 0; i < vokale.Length; i++)
                         {
-                            //  zeichenkette = zeichenkette.Replace(vokale[i].ToString(),"");
-                            for (int j = 0; j < zeichenkette.Length; j++) ;
+                            //zeichenkette = zeichenkette.Replace(vokale[i].ToString(),"");
+                            for (int j = 0; j < zeichenkette.Length; j++)
                             {
-
-                          
-                            if (zeichenkette{j} == vokale{i}) 
-                        {
-                            ersetzt2 +
+                                if (zeichenkette[j] == vokale[i])
+                                {
+                                    ersetzt2 += "";
+                                }
+                                else
+                                {
+                                    ersetzt2 += zeichenkette[i];
+                                }
+                            }
                         }
-
-
-                        }
-                        
-                        
                         Console.WriteLine(zeichenketteAlt + " wird zu " + zeichenkette);
                         break;
                     case "3":
+                        Console.WriteLine("Die Quersumme einer ganzen Zahl soll berechnet werden.");
+
+
+
+
+                        break;
+                    case "4":
                         Console.WriteLine("Programm wird beendet.");
                         
                         break;
